@@ -1,9 +1,11 @@
 <script setup lang="ts">
 </script>
 <template>
-    <div>
+    <div class="p-1.5">
         <Navbar></Navbar>
-        <slot />
+        <div>
+            <slot />
+        </div>
     </div>
 </template>
 <style lang="scss">
