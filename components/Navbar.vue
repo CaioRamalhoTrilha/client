@@ -1,11 +1,11 @@
 <template>
 <header>
-  <div class="px-6 py-4 pt-6 lg:px-8 isolate">    
+  <div class="px-6 py-4 pt-6 lg:px-8 bg-gray-100">    
     <div>
       <nav class="flex h-9 items-center justify-between" aria-label="Global">
         <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
           <a href="#" class="-m-1.5 p-1.5">
-            <img class="h-8" src="headerapenaslogo.png" alt="">
+            <img class="h-5" src="headerapenaslogo.png" alt="">
           </a>
         </div>
         <div class="flex lg:hidden">
@@ -20,21 +20,21 @@
         <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-center lg:gap-x-12">
           <ul class="flex flex-col p-4 mt-4 borderrounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0">
             <li>
-              <NuxtLink to="/" class="font-semibold text-gray-900 hover:text-gray-900">Inicio</NuxtLink>        
+              <NuxtLink to="/" class="text-lg font-semibold text-gray-900 hover:text-blue-500">Inicio</NuxtLink>        
             </li>
             <li>
-              <NuxtLink to="/produtos"  class="font-semibold text-gray-900 hover:text-gray-900">Produtos</NuxtLink>  
+              <NuxtLink to="/produtos"  class="text-lg  font-semibold text-gray-900 hover:text-blue-500">Produtos</NuxtLink>  
             </li>
             <li>
-              <NuxtLink to="/sobre"  class="font-semibold text-gray-900 hover:text-gray-900">Sobre</NuxtLink>
+              <NuxtLink to="/sobre"  class="text-lg  font-semibold text-gray-900 hover:text-blue-500">Sobre</NuxtLink>
             </li>
             <li>
-              <NuxtLink to="/clientes" class="font-semibold text-gray-900 hover:text-gray-900">Clientes</NuxtLink>          
+              <NuxtLink to="/clientes" class="text-lg  font-semibold text-gray-900 hover:text-blue-500">Clientes</NuxtLink>          
             </li>
           </ul>
         </div>
         <div class="hidden lg:flex lg:min-w-0 lg:flex-1 lg:justify-end">
-          <a href="#" class="inline-block rounded-lg px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20">Contato 
+          <a href="#" class="inline-block rounded-lg px-3 py-1.5 text-base font-semibold leading-6 text-gray-900 shadow-sm ring-1 ring-gray-900/10 hover:ring-gray-900/20">Contato 
             <span>&rarr;</span></a>
         </div>
       </nav>
