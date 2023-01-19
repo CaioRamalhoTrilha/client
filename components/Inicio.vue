@@ -14,7 +14,9 @@ onMounted(() => {
         <div>
           <div>
             <h1 class="text-4xl font-bold tracking-tight sm:text-center sm:text-6xl">Inovando a Gestão Pública com Transparência Competência</h1>
-            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Mais de 20 anos de experiência no desenvolvimento de soluções de Software para gestão pública e privada.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-600 sm:text-center">Mais de 20 anos de experiência no desenvolvimento de soluções de Software para esfera pública e privada.
+
+            </p>
             <div class="mt-8 flex gap-x-4 sm:justify-center">
               <a href="#" class="inline-block rounded-lg bg-blue-600 px-4 py-1.5 text-base font-semibold leading-7 text-white shadow-sm ring-1 ring-blue-600 hover:bg-blue-700 hover:ring-blue-700">
                 Agendar Conversa
@@ -43,9 +45,14 @@ onMounted(() => {
   </main>
 </div>
 </section>
-<div class="container">
-    <div class="">
-        <img src="/pessoas.jpg" alt="pessoas">
+<div class="flex gap-2 py-6 px-36">
+    <div class="grid grid-cols-2 gap-2">
+      <div>
+        <img class="" src="/pessoas.jpg" alt="pessoas">
+      </div>
+      <div>
+        2 Compor cards informativos?
+      </div>
     </div>
 </div>
 </template>
