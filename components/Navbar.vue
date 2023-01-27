@@ -1,6 +1,6 @@
 <template>
 <header>
-  <div class="px-6 py-4 pt-6 lg:px-8 bg-gray-100">    
+  <div class="px-6 py-4 pt-6 lg:px-8 bg-gray-200/75 shadow-lg border-slate-300/20 border rounded-md">    
     <div>
       <nav class="flex h-9 items-center justify-between" aria-label="Global">
         <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
@@ -39,7 +39,7 @@
         </div>
       </nav>
       <!-- Mobile menu, show/hide based on menu open state. -->
-      <div role="dialog" aria-modal="true">
+      <!-- <div role="dialog" aria-modal="true">
         <div focus="true" class="fixed inset-0 z-10 overflow-y-auto bg-white px-6 py-6 lg:hidden">
           <div class="flex h-9 items-center justify-between">
             <div class="flex">
@@ -51,7 +51,7 @@
             <div class="flex">
               <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
                 <span class="sr-only">Close menu</span>
-                <!-- Heroicon name: outline/x-mark -->
+
                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                 </svg>
@@ -75,7 +75,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </header>

@@ -10,15 +10,18 @@ onMounted(() => {
 const itensCard = [
   {
     titulo: 'Transparência',
-    texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.'
+    texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.',
+    icone: 'fa-solid fa-medal text-yellow-400'
   },
   {
     titulo: 'Gestão',
-    texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.'
+    texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.',
+    icone: 'fa-solid fa-people-group text-blue-400'
   },
   {
-    titulo: 'Prestação',
-    texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.'
+    titulo: 'Experiência',
+    texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.',
+    icone: 'fa-duotone fa-graduation-cap text-emerald-400'
   }
 ]
 </script>
@@ -62,27 +65,38 @@ const itensCard = [
   </main>
 </div>
 </section>
-<div class="flex flex-row gap-28 py-6 px-24 justify-center">
-      <div class="px-5 border-slate-300 border rounded-md w-1/6 h-max shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
-        <div class="flex mt-7 items-end">
-          <div class="basis-4/4">
-            <div class="flex justify-center">
-              <i class="text-5xl fa-solid fa-medal text-yellow-400"></i>
-            </div>
+<section class="h-screen flex items-center justify-center">
+  <div class="flex flex-row w-2/3 gap-24 justify-between">
+    <img class="h-auto max-w-lg shadow-2xl" src="@/public/pessoas.jpg" alt=""/>
+    <div class="bg-pink-500">
+      <h3>Titulo</h3>
+    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis debitis, nisi voluptas at nihil quos exercitationem dicta distinctio magni asperiores. Cumque sed soluta quisquam tenetur voluptates rem recusandae praesentium non.</span>      
+    </div>
+  </div>
+</section>
+<section class="h-screen flex items-center">
+  <div class="flex flex-row gap-28 py-6 px-24 justify-center">
+    <div class="px-5 border-slate-300 border rounded-md w-1/6 h-max shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
+      <div class="flex mt-7 items-end">
+        <div class="basis-4/4">
+          <div class="flex justify-center">
+            <i class="text-5xl" :class="item.icone"></i>
           </div>
         </div>
-        <div class="row-auto py-8">
-            <div class="flex justify-start">
-              <h4 class="text-3xl font-semibold">{{item.titulo}}</h4>
-            </div>
-        </div>
-        <div class="flex gap-4 pb-8">
-          <p class="text-justify tracking-wide">
-            {{ item.texto }}
-          </p>
-        </div>
       </div>
-</div>
+      <div class="row-auto py-8">
+          <div class="flex justify-start">
+            <h4 class="text-3xl font-semibold">{{item.titulo}}</h4>
+          </div>
+      </div>
+      <div class="flex gap-4 pb-8">
+        <p class="text-justify tracking-wide">
+          {{ item.texto }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
 </template>
 <style lang="scss" scoped>
 .bg-img{
