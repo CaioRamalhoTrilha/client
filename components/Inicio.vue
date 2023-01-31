@@ -27,7 +27,7 @@ const itensCard = [
 </script>
 <template>
 <section>
-<div class=" bg-gray-100 h-screen isolate">
+<div class=" bg-gray-100 h-screen isolate" id="missao">
   <main>
     <div class="relative px-6 lg:px-8">
       <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
@@ -65,37 +65,60 @@ const itensCard = [
   </main>
 </div>
 </section>
-<section class="h-screen flex items-center justify-center">
+<section class="h-screen flex items-center justify-center" id="objetivo">
   <div class="flex flex-row w-2/3 gap-24 justify-between">
     <img class="h-auto max-w-lg shadow-2xl" src="@/public/pessoas.jpg" alt=""/>
     <div class="bg-pink-500">
-      <h3>Titulo</h3>
-    <span>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis debitis, nisi voluptas at nihil quos exercitationem dicta distinctio magni asperiores. Cumque sed soluta quisquam tenetur voluptates rem recusandae praesentium non.</span>      
+      <h2>Digitalizar a Administração Pública com Governança</h2>
+    <span>Agilizar e Desburocratizar Processos, desenvolvendo fluxos eficiêntes e integrados.</span>
+    <p>A Tectrilha Softaware vem promovendo o desenvolvimento digital nos Órgãos públicos de todo o Espiríto Santo. Criando Sistemas de Gestão com Governança
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae inventore culpa illum unde, facere reiciendis obcaecati cumque nam blanditiis consectetur omnis minus aliquam ut voluptatibus officiis fugiat saepe velit veritatis?
+    </p>
     </div>
   </div>
 </section>
-<section class="h-screen flex items-center">
-  <div class="flex flex-row gap-28 py-6 px-24 justify-center">
-    <div class="px-5 border-slate-300 border rounded-md w-1/6 h-max shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
-      <div class="flex mt-7 items-end">
-        <div class="basis-4/4">
-          <div class="flex justify-center">
-            <i class="text-5xl" :class="item.icone"></i>
+<section class="h-screen" id="info">
+  <div class="flex justify-center">
+    <div>
+      <h3>
+          FABRICA DE SOFTWARES
+        </h3>
+        <span>SOFTARWS SOBRE DEMANDA, ENTREGANDO TODA A CADEIA DE DESENVOLVIMENTO. Prestação de Suporte, Treinamento e Documentação.</span>
+    </div>
+  </div>
+  <div class="flex items-center">
+    <div class="flex flex-row gap-28 py-6 px-24 justify-center">
+      <div class="px-5 border-slate-300 border rounded-md w-1/6 h-max shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
+        <div class="flex mt-7 items-end">
+          <div class="basis-4/4">
+            <div class="flex justify-center">
+              <i class="text-5xl" :class="item.icone"></i>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="row-auto py-8">
-          <div class="flex justify-start">
-            <h4 class="text-3xl font-semibold">{{item.titulo}}</h4>
-          </div>
-      </div>
-      <div class="flex gap-4 pb-8">
-        <p class="text-justify tracking-wide">
-          {{ item.texto }}
-        </p>
+        <div class="row-auto py-8">
+            <div class="flex justify-start">
+              <h4 class="text-3xl font-semibold">{{item.titulo}}</h4>
+            </div>
+        </div>
+        <div class="flex gap-4 pb-8">
+          <p class="text-justify tracking-wide">
+            {{ item.texto }}
+          </p>
+        </div>
       </div>
     </div>
   </div>
+</section>
+<section id="solucoes">
+  <div class="flex flex-row w-2/3 gap-24 justify-between">
+    <div class="bg-pink-500">
+      <h2>Conheça as nossas soluções</h2>
+    </div>
+  </div>
+</section>
+<section>
+  <h2>clientes</h2>
 </section>
 </template>
 <style lang="scss" scoped>
