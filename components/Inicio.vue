@@ -25,7 +25,7 @@ const itensCard = [
 </script>
 <template>
 <div class="bg-zinc-300">
-  <section class="h-screen isolate bg-gradient-to-l from-blue-500 to-cyan-500" id="missao">
+  <section class="h-screen isolate bg-gradient-to-l from-blue-500 to-cyan-600" id="missao">
     <main class="h-screen isolate">
       <div class="relative px-6 lg:px-8">
         <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
@@ -62,54 +62,80 @@ const itensCard = [
       </div>
     </main>
   </section>
-  <section class="h-screen" id="info">
-    <div class="flex justify-center">
+  <section class="lg:py-24 md:py-14" id="info">
+    <div class="flex justify-center container mx-auto">
       <div class="py-10">
         <h3 class="text-4xl text-center">
-            FABRICA DE SOFTWARES
+            Conheça a nossa Fábrica de Softwares
           </h3>
           <div class="pt-5">
-            <span>
-              SOFTARWS SOBRE DEMANDA, ENTREGANDO TODA A CADEIA DE DESENVOLVIMENTO. Prestação de Suporte, Treinamento e Documentação.
-            </span>
+            <h4 class="text-xl font-extralight text-center">              
+              Softwares feitos sobre demanda para <span class=" font-semibold">automatizar, digitalizar e agilizar processos.</span> Prestação de Suporte técnico, treinamento, capacitação dos operadores do Software e 
+              documentação do Produto dinâmica e de fácil compreensão.
+            </h4>
           </div>
       </div>
     </div>
-    <div class="flex items-center">
-      <div class="flex flex-row gap-28 py-6 px-24 justify-center">
-        <div class="bg-zinc-200 px-5 border-slate-300 border rounded-md w-1/6 h-max shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
-          <div class="flex mt-7 items-end" >
-            <div class="basis-4/4">
-              <div class="flex justify-center">
-                <i class="text-5xl" :class="item.icone"></i>
-              </div>
+    <div class="flex gap-28 py-6 px-24 justify-center">
+      <div class="bg-zinc-200 px-5 border-slate-300 border rounded-md w-1/6  shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
+        <div class="flex mt-7 items-end" >
+          <div class="basis-4/4">
+            <div class="flex justify-center">
+              <i class="text-5xl" :class="item.icone"></i>
             </div>
           </div>
-          <div class="row-auto py-8">
-              <div class="flex justify-start">
-                <h4 class="text-3xl font-semibold">{{item.titulo}}</h4>
-              </div>
-          </div>
-          <div class="flex gap-4 pb-8">
-            <p class="text-justify tracking-wide">
-              {{ item.texto }}
-            </p>
-          </div>
+        </div>
+        <div class="row-auto py-8">
+            <div class="flex justify-start">
+              <h4 class="text-3xl font-semibold">{{item.titulo}}</h4>
+            </div>
+        </div>
+        <div class="flex gap-4 pb-8">
+          <p class="text-justify tracking-wide">
+            {{ item.texto }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="solucoes">      
+    <div class="container mx-auto flex w-2/3 gap-24 justify-between">
+      <div>
+        <h3>Conheça mais sobre nossas soluções já existentes clicando no botão a baixo</h3>
+      </div>
+      <div>
+        <div class="w-full max-w-xs">
+          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+            <div class="mb-4">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
+                Username
+              </label>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+            </div>
+            <div class="mb-6">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
+                Password
+              </label>
+              <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
+              <p class="text-red-500 text-xs italic">Please choose a password.</p>
+            </div>
+            <div class="flex items-center justify-between">
+              <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+                Sign In
+              </button>
+              <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+                Forgot Password?
+              </a>
+            </div>
+          </form>
+          <p class="text-center text-gray-500 text-xs">
+            &copy;2020 Acme Corp. All rights reserved.
+          </p>
         </div>
       </div>
     </div>
   </section>
 </div>
-<section id="solucoes">
-  <div class="flex flex-row w-2/3 gap-24 justify-between">
-    <div class="bg-pink-500">
-      <h2>Conheça as nossas soluções</h2>
-    </div>
-  </div>
-</section>
-<section>
-  <h2>clientes</h2>
-</section>
 </template>
 <style lang="scss" scoped>
 .bg-img{
