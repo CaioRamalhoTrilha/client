@@ -25,7 +25,7 @@ const itensCard = [
 </script>
 <template>
 <div class="bg-zinc-300">
-  <section class="h-screen isolate bg-gradient-to-l from-blue-500 to-cyan-600" id="missao">
+  <section class="bg-gradient-to-l from-blue-500 to-cyan-600" id="missao">
     <main class="h-screen isolate">
       <div class="relative px-6 lg:px-8">
         <div class="mx-auto max-w-3xl pt-20 pb-32 sm:pt-48 sm:pb-40">
@@ -99,25 +99,30 @@ const itensCard = [
     </div>
   </section>
   <section id="solucoes">      
-    <div class="container mx-auto flex w-2/3 gap-24 justify-between">
+    <div class="container mx-auto flex flex-row w-2/3 gap-24 justify-center">
       <div>
         <h3>Conheça mais sobre nossas soluções já existentes clicando no botão a baixo</h3>
       </div>
       <div>
-        <div class="w-full max-w-xs">
-          <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+        <div class="w-full divide-transparent max-w-xs">
+          <form class="bg-white shadow-md rounded px-14 pt-6 pb-8 mb-4">
             <div class="mb-4">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="username">
-                Username
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+                Email
               </label>
-              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Username">
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="email@email.com.br">
             </div>
             <div class="mb-6">
-              <label class="block text-gray-700 text-sm font-bold mb-2" for="password">
-                Password
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="assunto">
+                Assunto
               </label>
-              <input class="shadow appearance-none border border-red-500 rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="******************">
-              <p class="text-red-500 text-xs italic">Please choose a password.</p>
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="assunto" type="text" placeholder="Suporte, Contato...">              
+            </div>
+            <div class="mb-6">
+              <label class="block text-gray-700 text-sm font-bold mb-2" for="Mensagem">
+                Mensagem
+              </label>
+              <textarea rows="4" cols="50" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="Mensagem" type="text" placeholder="Gostaria de Solicitar uma reunião..."/>              
             </div>
             <div class="flex items-center justify-between">
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
@@ -128,9 +133,6 @@ const itensCard = [
               </a>
             </div>
           </form>
-          <p class="text-center text-gray-500 text-xs">
-            &copy;2020 Acme Corp. All rights reserved.
-          </p>
         </div>
       </div>
     </div>
