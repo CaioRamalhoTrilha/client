@@ -40,9 +40,9 @@ const itensCard = [
                   Agendar Conversa
                   <span class="text-indigo-200" aria-hidden="true">&rarr;</span>
                 </a>
-                <a href="#" class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-900 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+                <a href="#" class="inline-block rounded-lg px-4 py-1.5 text-base font-semibold leading-7 text-gray-200 ring-1 ring-slate-100/10 hover:ring-gray-200/20">
                   Visualizar Soluções
-                  <span class="text-gray-400" aria-hidden="true">&rarr;</span>
+                  <span class="text-gray-200" aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
@@ -107,7 +107,7 @@ const itensCard = [
         <div class="container mx-auto divide-transparent lg:w-5/6">
           <form class="bg-white  shadow-md rounded px-10  pt-6 pb-8 mb-4">
             <h2 class="text-lg text-center pb-8">
-              Mande uma mensagem preenchendo o formulário abaixo e entraremos em contato com você
+              Mande uma mensagem preenchendo o formulário e entraremos em contato com você
             </h2>
             <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2" for="email">

@@ -1,6 +1,6 @@
 <template>
 <header>
-  <div class="px-6 py-4 pt-6 lg:px-8 bg-gray-200/75 shadow-lg border-slate-300/20 border rounded-md">    
+  <div class="px-6 py-3 lg:px-8 bg-gradient-to-l to-gray-300/75  from-inc-300/75 shadow-lg border-slate-300/20 border rounded-md">    
     <div>
       <nav class="flex h-9 items-center justify-between" aria-label="Global">
         <div class="flex lg:min-w-0 lg:flex-1" aria-label="Global">
