@@ -100,37 +100,37 @@ const itensCard = [
   </section>
   <section id="solucoes">      
     <div class="container mx-auto flex flex-row w-2/3 gap-24 justify-center">
-      <div>
+      <div class="w-1/2 break-words">
         <h3>Conheça mais sobre nossas soluções já existentes clicando no botão a baixo</h3>
       </div>
       <div>
-        <div class="w-full divide-transparent max-w-xs">
-          <form class="bg-white shadow-md rounded px-14 pt-6 pb-8 mb-4">
+        <div class="container mx-auto divide-transparent lg:w-5/6">
+          <form class="bg-white  shadow-md rounded px-10  pt-6 pb-8 mb-4">
+            <h2 class="text-lg text-center pb-8">
+              Mande uma mensagem preenchendo o formulário abaixo e entraremos em contato com você
+            </h2>
             <div class="mb-4">
               <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
-                Email
+                Email <span class="text-red-700">*</span>
               </label>
               <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="text" placeholder="email@email.com.br">
             </div>
             <div class="mb-6">
               <label class="block text-gray-700 text-sm font-bold mb-2" for="assunto">
-                Assunto
+                Assunto <span class="text-red-700">*</span>
               </label>
               <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="assunto" type="text" placeholder="Suporte, Contato...">              
             </div>
             <div class="mb-6">
               <label class="block text-gray-700 text-sm font-bold mb-2" for="Mensagem">
-                Mensagem
+                Mensagem <span class="text-red-700">*</span>
               </label>
               <textarea rows="4" cols="50" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="Mensagem" type="text" placeholder="Gostaria de Solicitar uma reunião..."/>              
             </div>
-            <div class="flex items-center justify-between">
+            <div class="flex items-center justify-end">
               <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
-                Sign In
+                Enviar
               </button>
-              <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
-                Forgot Password?
-              </a>
             </div>
           </form>
         </div>
