@@ -76,8 +76,8 @@ const itensCard = [
           </div>
       </div>
     </div>
-    <div class="flex gap-36 py-6 px-24 justify-center">
-      <div class="bg-zinc-200 px-5 border-slate-300 border rounded-md w-1/6  shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
+    <div class="grid grid-cols-3 gap-5 py-6 px-5 justify-center container mx-auto">
+      <div class="bg-zinc-200 px-8 border-slate-300 border rounded-md lg:w-9/12 shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
         <div class="flex mt-7 items-end" >
           <div class="basis-4/4">
             <div class="flex justify-center">
