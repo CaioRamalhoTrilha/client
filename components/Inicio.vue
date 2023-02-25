@@ -76,7 +76,7 @@ const itensCard = [
           </div>
       </div>
     </div>
-    <div class="flex gap-28 py-6 px-24 justify-center">
+    <div class="flex gap-36 py-6 px-24 justify-center">
       <div class="bg-zinc-200 px-5 border-slate-300 border rounded-md w-1/6  shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
         <div class="flex mt-7 items-end" >
           <div class="basis-4/4">
@@ -101,7 +101,6 @@ const itensCard = [
   <section id="solucoes">      
     <div class="container mx-auto flex flex-row w-2/3 gap-24 justify-center">
       <div class="w-1/2 break-words">
-        <h3>Conheça mais sobre nossas soluções já existentes clicando no botão a baixo</h3>
       </div>
       <div>
         <div class="container mx-auto divide-transparent lg:w-5/6">
