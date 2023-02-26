@@ -13,6 +13,7 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
-    "sass": "^1.56.2"
+    "sass": "^1.56.2",
+    "vue3-google-map": "^0.15.0"
   }
 }

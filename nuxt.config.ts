@@ -18,7 +18,8 @@ export default defineNuxtConfig({
     app: {
         head: {
             script: [
-                {src: 'https://kit.fontawesome.com/84b3553096.js', crossorigin: 'anonymous'}
+                {src: 'https://kit.fontawesome.com/84b3553096.js', crossorigin: 'anonymous'},
+                {src: 'https://unpkg.com/vue3-google-map'}
             ],
         }
     }

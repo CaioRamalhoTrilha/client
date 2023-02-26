@@ -1,5 +1,8 @@
 <script lang="ts" setup>
 import { onMounted } from 'vue';
+import { GoogleMap, Marker } from 'vue3-google-map'
+
+const center = { lat: -20.30895263461249, lng: -40.29478393509859 }
 
 onMounted(() => {
     
@@ -101,6 +104,13 @@ const itensCard = [
   <section id="solucoes">      
     <div class="container mx-auto flex flex-row w-2/3 gap-24 justify-center">
       <div class="w-1/2 break-words">
+        <GoogleMap          
+          style="width: 100%; height: 500px"
+          :center="center"
+          :zoom="15"
+          >
+          <Marker :options="{ position: center }" />
+        </GoogleMap>
       </div>
       <div>
         <div class="container mx-auto divide-transparent lg:w-5/6">
