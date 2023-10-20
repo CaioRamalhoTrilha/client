@@ -24,7 +24,8 @@ const itensCard = [
     texto: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus consectetur ratione quisquam veniam, amet harum corporis placeat tempore, aliquam culpa molestiae laboriosam, impedit fugit natus dolores iusto. Dicta, reiciendis totam.',
     icone: 'fa-duotone fa-graduation-cap text-emerald-400'
   }
-]
+];
+
 </script>
 <template>
 <div class="bg-zinc-300">
@@ -79,8 +80,8 @@ const itensCard = [
           </div>
       </div>
     </div>
-    <div class="grid grid-cols-3 gap-5 py-6 px-5 justify-center container mx-auto">
-      <div class="bg-zinc-200 px-8 border-slate-300 border rounded-md lg:w-9/12 shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
+    <div class="grid lg:grid-cols-3 gap-5 py-6 px-5 justify-center container mx-auto">
+      <div class="bg-zinc-200 px-8 border-slate-300 border rounded-md  shadow-2xl" v-for="(item, ix) in itensCard" v-bind:key="ix">
         <div class="flex mt-7 items-end" >
           <div class="basis-4/4">
             <div class="flex justify-center">
@@ -102,8 +103,8 @@ const itensCard = [
     </div>
   </section>
   <section id="solucoes">      
-    <div class="container mx-auto flex flex-row w-2/3 gap-24 justify-center">
-      <div class="w-1/2 break-words">
+    <div class="container mx-auto gap-24 justify-center">
+      <div class="break-words">
         <GoogleMap          
           style="width: 100%; height: 500px"
           :center="center"
@@ -113,7 +114,7 @@ const itensCard = [
         </GoogleMap>
       </div>
       <div>
-        <div class="container mx-auto divide-transparent lg:w-5/6">
+        <div class="container mx-auto divide-transparent">
           <form class="bg-white  shadow-md rounded px-10  pt-6 pb-8 mb-4">
             <h2 class="text-lg text-center pb-8">
               Mande uma mensagem preenchendo o formulário e entraremos em contato com você
