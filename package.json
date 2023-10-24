@@ -13,6 +13,7 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
+    "flowbite": "^1.8.1",
     "sass": "^1.56.2",
     "vue3-google-map": "^0.15.0"
   }
